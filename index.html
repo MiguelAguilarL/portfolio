@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miguel Aguilar | Frontend Developer</title>
-  <meta name="description" content="Portafolio personal de Miguel Aguilar - Frontend Developer">
+  <title data-i18n="meta.title">Miguel Aguilar | Frontend Developer</title>
+  <meta name="description" data-i18n-content="meta.description" content="Portafolio personal de Miguel Aguilar - Frontend Developer">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,17 @@
     <div class="nav-container">
       <a href="#hero" class="nav-logo">Miguel Aguilar</a>
       <ul class="nav-links">
-        <li><a href="#about">Inicio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#about" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="#contact" data-i18n="nav.contacto">Contacto</a></li>
+        <li class="nav-lang-toggle">
+          <button class="lang-option active" data-lang="es">ES</button>
+          <span class="lang-separator">|</span>
+          <button class="lang-option" data-lang="en">EN</button>
+        </li>
       </ul>
-      <button class="nav-toggle" aria-label="Menu">
+      <button class="nav-toggle" aria-label="Menu" data-i18n-aria-label="nav.menu">
         <span></span>
         <span></span>
         <span></span>
@@ -35,16 +40,16 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="hero-content">
-      <p class="hero-greeting">Hola, soy</p>
+      <p class="hero-greeting" data-i18n="hero.greeting">Hola, soy</p>
       <h1 class="hero-name">
         <span class="gradient-text">Miguel Aguilar</span>
       </h1>
-      <p class="hero-role">Frontend Developer</p>
-      <p class="hero-description">
+      <p class="hero-role" data-i18n="hero.role">Frontend Developer</p>
+      <p class="hero-description" data-i18n="hero.description">
         Estudiante de Ingeniería en Sistemas apasionado por el desarrollo de software y web. Me encanta aprender cosas nuevas y colaborar en equipo. Actualmente incursionando en el mundo del desarrollo con IA.
       </p>
       <a href="#projects" class="btn-primary">
-        Ver Proyectos
+        <span data-i18n="hero.cta">Ver Proyectos</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
       </a>
 
@@ -53,7 +58,7 @@
           <span class="terminal-dot red"></span>
           <span class="terminal-dot yellow"></span>
           <span class="terminal-dot green"></span>
-          <span class="terminal-title">my_stack</span>
+          <span class="terminal-title" data-i18n="hero.terminal.title">my_stack</span>
         </div>
         <div class="terminal-body">
           <p><span class="terminal-prompt">$</span> JavaScript</p>
@@ -68,7 +73,7 @@
 
     <div class="hero-status">
       <span class="status-dot"></span>
-      <span>Disponible para trabajar</span>
+      <span data-i18n="hero.status">Disponible para trabajar</span>
     </div>
 
     <div class="hero-glow"></div>
@@ -79,41 +84,41 @@
     <div class="section-container">
       <div class="section-header">
         <span class="ghost-number">01</span>
-        <p class="section-subtitle">[ who am i ]</p>
-        <h2 class="section-title">Acerca de mí</h2>
+        <p class="section-subtitle" data-i18n="about.subtitle">[ who am i ]</p>
+        <h2 class="section-title" data-i18n="about.title">Acerca de mí</h2>
       </div>
 
       <div class="about-grid">
         <div class="about-stats">
           <div class="stat-card">
             <span class="stat-number">2+</span>
-            <span class="stat-label">Proyectos</span>
+            <span class="stat-label" data-i18n="about.stat1">Proyectos</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">11+</span>
-            <span class="stat-label">Tecnologías</span>
+            <span class="stat-label" data-i18n="about.stat2">Tecnologías</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">∞</span>
-            <span class="stat-label">Aprendizaje</span>
+            <span class="stat-label" data-i18n="about.stat3">Aprendizaje</span>
           </div>
         </div>
 
         <div class="about-text">
-          <p>
+          <p data-i18n="about.p1">
             Actualmente estoy estudiando la carrera de <strong>Ingeniería en Sistemas Computacionales</strong> en el Instituto Tecnológico de Veracruz. Mi pasión es el desarrollo de software y aplicaciones web.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Me considero una persona proactiva, responsable y con muchas ganas de aprender. Me encanta colaborar en equipo y enfrentar nuevos desafíos que me permitan crecer tanto profesional como personalmente.
           </p>
-          <p>
+          <p data-i18n="about.p3">
             Actualmente estoy incursionando en el mundo del desarrollo con <strong>Inteligencia Artificial</strong>, utilizando herramientas como Opencode y Antigravity para potenciar mis proyectos.
           </p>
 
           <div class="about-skills">
-            <span class="skill-tag">Aprendizaje continuo</span>
-            <span class="skill-tag">Trabajo en equipo</span>
-            <span class="skill-tag">Innovación</span>
+            <span class="skill-tag" data-i18n="about.skill1">Aprendizaje continuo</span>
+            <span class="skill-tag" data-i18n="about.skill2">Trabajo en equipo</span>
+            <span class="skill-tag" data-i18n="about.skill3">Innovación</span>
           </div>
         </div>
       </div>
@@ -125,8 +130,8 @@
     <div class="section-container">
       <div class="section-header">
         <span class="ghost-number">02</span>
-        <p class="section-subtitle">[ my skills ]</p>
-        <h2 class="section-title">Stack Tecnológico</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">[ my skills ]</p>
+        <h2 class="section-title" data-i18n="skills.title">Stack Tecnológico</h2>
       </div>
     </div>
 
@@ -276,8 +281,8 @@
     <div class="section-container">
       <div class="section-header">
         <span class="ghost-number">03</span>
-        <p class="section-subtitle">[ my projects ]</p>
-        <h2 class="section-title">Proyectos</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">[ my projects ]</p>
+        <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
       </div>
 
       <div class="projects-grid">
@@ -295,7 +300,7 @@
               </div>
             </div>
             <h3 class="project-title">Sakura Learning</h3>
-            <p class="project-description">
+            <p class="project-description" data-i18n="projects.sakura.desc">
               Aplicación web para practicar lectura de Hiragana y Katakana con una experiencia visual tipo Sakura/Zen. Incluye quiz interactivo y resumen de sesión.
             </p>
             <div class="project-tech">
@@ -321,7 +326,7 @@
               </div>
             </div>
             <h3 class="project-title">Markdown Learn</h3>
-            <p class="project-description">
+            <p class="project-description" data-i18n="projects.markdown.desc">
               Aplicación web interactiva para aprender la sintaxis básica de Markdown (CommonMark y GFM) con ejercicios prácticos y editor con feedback en tiempo real.
             </p>
             <div class="project-tech">
@@ -341,20 +346,20 @@
     <div class="section-container">
       <div class="section-header">
         <span class="ghost-number">04</span>
-        <p class="section-subtitle">[ get in touch ]</p>
-        <h2 class="section-title">Contacto</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">[ get in touch ]</p>
+        <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
       </div>
 
       <div class="contact-content">
-        <h3 class="contact-heading">¡Hablemos!</h3>
-        <p class="contact-text">
+        <h3 class="contact-heading" data-i18n="contact.heading">¡Hablemos!</h3>
+        <p class="contact-text" data-i18n="contact.text">
           ¿Tienes un proyecto en mente o simplemente quieres charlar? ¡Me encantaría escucharte!
         </p>
 
         <a href="mailto:mikeal2123495@gmail.com" class="btn-email">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <div>
-            <span class="btn-email-label">Enviar Email</span>
+            <span class="btn-email-label" data-i18n="contact.email">Enviar Email</span>
             <span class="btn-email-address">mikeal2123495@gmail.com</span>
           </div>
         </a>
@@ -377,7 +382,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
-      <p>&copy; 2026 Miguel Aguilar.</p>
+      <p data-i18n="footer.copyright">&copy; 2026 Miguel Aguilar.</p>
       <div class="footer-links">
         <a href="https://github.com/MiguelAguilarL" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -392,6 +397,7 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
